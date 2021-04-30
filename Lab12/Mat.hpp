@@ -42,6 +42,10 @@ public:
     }
 };
 
+Mat operator*(const int& x, Mat& m){ //free function
+    return m * x;
+}
+
 Mat Mat::Identity = Mat(1, 0, 0, 1);
 
 #endif
